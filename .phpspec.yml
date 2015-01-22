@@ -1,0 +1,4 @@
+suites:
+    application_suite:
+        namespace: Application
+        psr4_prefix: Application

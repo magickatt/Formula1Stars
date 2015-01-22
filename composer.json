@@ -3,5 +3,13 @@
   "description": "Formula 1 statistics",
   "require": {
     "zendframework/zendframework": "2.3.*"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Application\\": "module/Application/src/Application/"
+    }
   }
 }
