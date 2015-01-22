@@ -1,0 +1,7 @@
+{
+  "name": "magickatt/Formula1Stars",
+  "description": "Formula 1 statistics",
+  "require": {
+    "zendframework/zendframework": "2.3.*"
+  }
+}
