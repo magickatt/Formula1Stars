@@ -1,11 +1,11 @@
 <?php
 
-namespace spec\Application\Controller;
+namespace spec\Driver\Controller;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class HomepageControllerSpec extends ObjectBehavior
+class IndexControllerSpec extends ObjectBehavior
 {
     function it_should_return_a_viewmodel()
     {
