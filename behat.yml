@@ -1,0 +1,6 @@
+default:
+  suites:
+    domain:
+      contexts: [ DomainContext ]
+    web:
+      contexts: [ WebContext ]
