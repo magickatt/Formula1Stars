@@ -15,7 +15,16 @@ return array(
             ),
         ),
     ),
-    'service_manager' => array(),
+    'service_manager' => array(
+        'factories' => array(
+            'Driver\Db\TableGateway' => function ($sm) {
+                $dbAdapter = $sm->get('Db\Adapter');
+                $resultSetPrototype = new \Zend\Db\ResultSet\ResultSet();
+                $resultSetPrototype->setArrayObjectPrototype(new \Driver\Entity\Driver());
+                return new \Zend\Db\TableGateway\TableGateway('driver', $dbAdapter, null, $resultSetPrototype);
+            },
+        ),
+    ),
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Homepage' => 'Application\Controller\HomepageController'

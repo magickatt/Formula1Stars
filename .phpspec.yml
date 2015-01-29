@@ -2,3 +2,6 @@ suites:
     application_suite:
         namespace: Application
         psr4_prefix: Application
+    driver_suite:
+        namespace: Driver
+        psr4_prefix: Driver
