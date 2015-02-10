@@ -6,8 +6,8 @@
   },
   "require-dev": {
     "phpspec/phpspec": "2.0.*",
-    "behat/behat": "3.0.*",
-    "behat/mink-extension": "2.0.*"
+    "behat/behat": "dev-master",
+    "behat/mink-extension": "dev-master"
   },
   "autoload": {
     "psr-4": {
