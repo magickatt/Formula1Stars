@@ -12,7 +12,8 @@
   "autoload": {
     "psr-4": {
       "Application\\": "module/Application/src/Application/",
-      "Driver\\": "module/Driver/src/Driver/"
+      "Driver\\": "module/Driver/src/Driver/",
+      "World\\": "module/World/src/World/"
     }
   }
 }
