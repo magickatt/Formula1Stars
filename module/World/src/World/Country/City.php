@@ -2,6 +2,9 @@
 
 namespace World\Country;
 
+use World\Country\Exception\LatitudeException;
+use World\Country\Exception\LongitudeException;
+
 class City
 {
     /** @var string */
@@ -47,7 +50,7 @@ class City
             'max' => 180
         ));
         if (! $validator->isValid($longitude)) {
-            throw new \Exception();
+            throw new LongitudeException();
         }
         $this->longitude = $longitude;
     }
@@ -70,7 +73,7 @@ class City
             'max' => 90
         ));
         if (! $validator->isValid($latitude)) {
-            throw new \Exception();
+            throw new LatitudeException();
         }
         $this->latitude = $latitude;
     }

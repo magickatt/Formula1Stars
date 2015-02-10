@@ -24,13 +24,13 @@ class CitySpec extends ObjectBehavior
 
     function it_cannot_be_given_an_invalid_longitude()
     {
-        $this->shouldThrow('\Exception')->duringSetLongitude(181);
-        $this->shouldThrow('\Exception')->duringSetLongitude(-181);
+        $this->shouldThrow('\World\Country\Exception\LongitudeException')->duringSetLongitude(181);
+        $this->shouldThrow('\World\Country\Exception\LongitudeException')->duringSetLongitude(-181);
     }
 
     function it_cannot_be_given_an_invalid_latitude()
     {
-        $this->shouldThrow('\Exception')->duringSetLatitude(91);
-        $this->shouldThrow('\Exception')->duringSetLatitude(-91);
+        $this->shouldThrow('\World\Country\Exception\LatitudeException')->duringSetLatitude(91);
+        $this->shouldThrow('\World\Country\Exception\LatitudeException')->duringSetLatitude(-91);
     }
 }
