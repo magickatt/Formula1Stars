@@ -9,9 +9,9 @@ class IndexController extends AbstractActionController
 {
     private $repository;
 
-    public function __construct(\Driver\Repository\Driver $repository)
+    public function __construct(/*\Driver\Repository\Driver $repository*/)
     {
-        $this->repository = $repository;
+        //$this->repository = $repository;
     }
 
     public function indexAction()
